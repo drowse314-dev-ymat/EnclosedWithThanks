@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\EnclosedWithThanks.csproj">
+      <Project>{D2015E35-9429-42B6-80BA-EBD29892775D}</Project>
+      <Name>EnclosedWithThanks</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
