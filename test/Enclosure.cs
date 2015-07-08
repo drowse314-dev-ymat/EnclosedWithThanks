@@ -97,5 +97,21 @@ namespace EnclosedWithThanks.Spec
                 myNumberCopied.should_be(2);
             };
         }
+
+
+        void with_actions_taking_no_parameters_provided()
+        {
+            it["should accept and trigger"] = () => {
+                int i = 0;
+                using (
+                    Enclosing.GetEnclosure(
+                        onOpen: () => { i++; },
+                        onClose: () => { i++; }))
+                {
+                    i.should_be(1);
+                }
+                i.should_be(2);
+            };
+        }
     }
 }

@@ -19,6 +19,13 @@ namespace EnclosedWithThanks.Enclosure
             return GetEnclosure<Enclosing>(onOpen, onClose);
         }
 
+        public static Enclosing GetEnclosure(Action onOpen, Action onClose)
+        {
+            return GetEnclosure<Enclosing>(
+                context => { onOpen(); },
+                context => { onClose(); });
+        }
+
         public void Dispose()
         {
             DoClose();
