@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>EnclosedWithThanks</id>
+    <version>$version$</version>
+    <authors>Yu Matsushita</authors>
+    <projectUrl>https://github.com/drowse314-dev-ymat/EnclosedWithThanks</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EnclosedWithThanks provides tiny IDisposable patterns for hasty .NET coders.</description>
+    <tags>idisposable utility action delegate</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\EnclosedWithThanks.dll" target="lib\net40" />
+    <file src="bin\Release\EnclosedWithThanks.pdb" target="lib\net40" />
+  </files>
+</package>
